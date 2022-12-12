@@ -3,17 +3,37 @@
 import "./App.css";
 import Home from "./components/Home";
 import Nav from "./components/Nav";
-import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Checkout from "./components/Checkout";
+import Login from "./Login";
+import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 function App() {
   return (
     <Router>
-      <div>
-        <Nav />
-        <Home />
-      </div>
-    <Router>
-    
+      <Routes>
+        <Route exact path="/login" element={<Login />} />
+        <Route
+          exact
+          path="/checkout"
+          element={
+            <>
+              <Nav />
+              <Checkout />
+            </>
+          }
+        />
+        <Route
+          exact
+          path="/"
+          element={
+            <>
+              <Nav />
+              <Home />
+            </>
+          }
+        />
+      </Routes>
+    </Router>
   );
 }
 
