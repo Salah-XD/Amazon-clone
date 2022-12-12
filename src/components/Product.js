@@ -20,7 +20,7 @@ function Product({ title, des, price, price2, ratings, image }) {
             ))}
         </div>
       </div>
-      <img src={image}></img>
+      <img src={image} alt=""></img>
       <button type="Submit">Add to Basket</button>
     </div>
   );
