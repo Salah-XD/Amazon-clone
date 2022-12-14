@@ -1,0 +1,38 @@
+.delivery {
+  display: flex;
+  text-decoration: none;
+  background-color: #232f3e;
+  color: #fff;
+  padding: 15px;
+  align-items: center;
+  height: 50px;
+}
+.delivery__info {
+  width: 19%;
+  display: flex;
+}
+.delivery__info .icon {
+  font-size: 30px;
+}
+.delivery__address {
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.delivery__options {
+  width: 100%;
+  margin-left: 50px;
+}
+.delivery__options ul li {
+  display: inline-block;
+  list-style: none;
+  padding: 13px;
+}
+.lastOne {
+  float: right;
+}
+
+.delivery__options ul li a {
+  text-decoration: none;
+  color: #fff;
+}
