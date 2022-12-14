@@ -6,6 +6,7 @@ import Nav from "./components/Nav";
 import Checkout from "./components/Checkout";
 import Login from "./Login";
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import Delivery from "./components/delivery";
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
           element={
             <>
               <Nav />
+              <Delivery />
               <Home />
             </>
           }
